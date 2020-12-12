@@ -20,7 +20,7 @@ import { JwtMiddleware } from "./jwt/jwt.middleware";
             }),
         }),
         GraphQLModule.forRoot({
-            autoSchemaFile: join(process.cwd(), "src/schema.gql"),
+            autoSchemaFile: join(process.cwd(), "schema.gql"),
         }),
         JwtModule.forRoot({
             privateKey:  process.env.TOKEN_SECRET,

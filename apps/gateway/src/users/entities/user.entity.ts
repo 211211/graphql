@@ -4,7 +4,7 @@ import { InternalServerErrorException } from "@nestjs/common";
 import * as bcrypt from "bcrypt";
 import { IsEnum } from "class-validator";
 
-import { CoreEntity } from "src/common/entitites/core.entity";
+import { CoreEntity } from "../../common/entitites/core.entity";
 
 enum UserRole {
     Owner,
